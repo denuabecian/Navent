@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Evaluaci&oacute;n Front End - Jobs</title>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/glyphicons/css/glyphicons-bootstrap.css">
+<link rel="stylesheet" href="assets/css/glyphicons/css/glyphicons.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+    
+<body onLoad="javascript:check();">
+    
+<!-- MODAL -->
+<div class="contenedor-modal">
+<div class="modal fade shadow" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+<div class="modal-content">
+    
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+
+<div class="modal-body">          
+<div class="row">
+    <form action="javascript:saveData();" class="col-12" method="get">
+        
+        <label class="font-weight-bold">Nombre </label><input class="shadow-sm form-control my-1" type="text" id="input_usuario" name="usuario" required><br>
+        
+        <label class="font-weight-bold">Fecha de nacimiento </label><input class="shadow-sm form-control my-1" id="input_edad" type="date" name="edad" required><br>
+        
+        <label class="font-weight-bold">Sexo</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="input_sexo1" value="Femenino" required>
+          <label class="form-check-label" for="sexo">Femenino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="input_sexo2" value="Masculino" required>
+          <label class="form-check-label" for="sexo">Masculino</label>
+        </div><br>
+        
+        <label class="mt-4 font-weight-bold">Email </label><input class="shadow-sm form-control my-1" type="email" id="input_email" name="email" required><br>
+         
+        <div class="modal-footer">
+        <input class="btn text-uppercase" type="button" data-dismiss="modal" aria-label="Close" value="Cancelar">
+        
+        <input class="btn btn-success text-uppercase" id="guardar" type="submit" value="Guardar">
+   
+        </div></form>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FIN MODAL -->
+
+<div class="container mt-4 px-4 rounded shadow">
+<h1 class="text-center pt-5">Evaluaci&oacute;n Front End - Jobs</h1>
+<h4 class="text-center pt-2 pb-5">Denise Anush Abecian</h4>
+<table class="table">
+    <thead class="text-uppercase">
+        <tr>
+            <th class="border-top-0">ID</th>
+            <th class="border-top-0">Nombre</th>
+            <th class="border-top-0">Edad</th>
+            <th class="border-top-0">Sexo</th>
+            <th class="border-top-0">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    
+</table>
+    <nav class="pagination-nav">
+  <ul class="pagination justify-content-center">    
+  </ul>
+</nav>
+<div class="modal-footer">
+<a class="text-uppercase btn btn-success my-1 open-form" href="#" onClick="openModal();" data-toggle="modal" data-target="#miModal">Cargar Usuario</a>
+
+</div>
+<script src="assets/js/jquery-3.1.0.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
